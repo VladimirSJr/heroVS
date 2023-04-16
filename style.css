@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,600;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111a21;
+}
+
+#max-width{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#combat{
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carHero{
+    width: 100%;
+    height: 100%;
+    color: #111a21;
+    text-align: center;
+}
+.cardHero img{
+    width: 100%;
+    border-radius: 10px;
+}
+.cardHero p{
+    width: 100%;
+    height: auto;
+    font-size: .8rem;
+    padding-left: .1rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.cardHero p span{
+    color: #a9081c;
+}
+#hero1, #hero2{
+    background-color: #716b6d;
+    border-radius: 10px;
+    padding: .1rem;
+}
+#hero1, #hero2, #vs{
+    width: calc(33% - 20px);
+    height: auto;
+}
+
+#vs{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#vs h1{
+    font-size: 2rem;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #716b6d;
+    padding: 2rem 0;
+}
+#vs span{
+    color: #a9081c;
+}
+
+#winner{
+    font-size: 1rem;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width:500px){
+    .cardHero p{
+        font-size: 1rem;
+    }
+    #vs h1{
+        font-size: 2.5rem;
+    }
+    #winner{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:750px){
+    .cardHero p{
+        font-size: 1.2rem;
+    }
+    #vs h1{
+        font-size: 3rem;
+    }
+    #winner{
+        font-size: 2rem;
+    }
+    #hero1, #hero2, #vs{
+        width: calc(25% - 20px);
+    }
+    #combat{
+        justify-content: space-around;
+    }
+}
